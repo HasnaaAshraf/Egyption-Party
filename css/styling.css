@@ -1,0 +1,205 @@
+
+body{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Loading Screen */
+
+.loadingScreen{
+    background-color: #cccccce0;
+    display: flex;
+}
+
+/* Header Section */
+
+.header{
+    background-color: #cd5759ac;
+    height: 100vh;
+    background-image: linear-gradient(#d85557ac , #971d21d3) , url(../images/events-heavenly-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.h1-header{
+    font-size: 4.2rem;
+    padding-top: 15rem;
+}
+
+.span-header{
+    font-size: 1.1rem;
+}
+
+/* navbar  */
+
+.navbar .container{
+    display: inline-block;
+    margin-left: -5rem;
+    margin-top: 2rem;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-brand{
+   cursor: pointer;
+}
+
+.bg-dark {
+    --bs-bg-opacity: 0;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.nav-link{
+    font-size: 2rem;
+    margin: 1rem;
+    color: white;
+    text-align: left;  
+}
+
+.nav-link:hover{
+    color: rgba(214, 46, 51, 0.4) !important;
+}
+
+/* Section Duration */
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#duration .container{
+    height: auto;
+    width: auto;
+    margin: 5rem 0;  
+}
+
+.SingerContainer{
+    cursor: pointer;
+}
+
+.row .SingerH2{
+    background-color: #E68285;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.row .SingerSpan{
+    background-color: #CCCCCC;
+    padding: 10px;
+    font-size: 1.1rem;
+    margin: 0;
+    display: none;
+}
+
+/* Section Details */
+
+#details{
+    background-image: linear-gradient(#d85557ac , #971d21d3) , url(../images/invitation-2508607__340.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    margin-bottom: 5rem;  
+}
+
+.col-md-3{
+    margin-top: 4rem !important;
+}
+
+.item {
+    border: 1px solid white;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 3rem !important;
+}
+
+/* Contact Section */
+
+.contactH2{
+    font-weight: 900;
+    color: rgb(68, 68, 68);
+    margin-left: 20px;
+}
+
+.contactP{
+    margin-bottom: 3rem;
+    margin-left: 20px;
+}
+
+.mainH2{
+    color: rgb(68, 68, 68);
+    margin-left: 20px;
+}
+
+.mainP{
+    color: rgb(119, 119, 119);
+    font-size: 1.2rem !important;
+}
+
+.contactInfo p{
+    color: #777777;
+    font-size: 1.2rem;
+}
+
+.icons p{
+    margin: 2rem 0;
+}
+
+.icons p.red{
+    color: #D62E33;
+}
+
+i{
+    color: #777777;
+}
+
+.social-list{
+    margin-left: -10rem;
+    margin-top: 5rem !important;
+    margin-bottom: 2rem;
+}
+
+.social-list .listItem{
+    border: 1px solid ;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    /* padding: 20px; */
+    cursor: pointer;
+    margin: 0 5px;
+    color: #777777; 
+}
+
+.social-list .listItem:hover{
+    background-color: #D62E33;
+    color: white;
+    border: none;
+}
+
+.listItem i{
+    font-size: 1.1rem;
+    margin-left: 8px;
+}
+
+.listItem i:hover{
+ color: white;
+}
+
+#chars{
+    color:#D62E33;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+@media (max-width:750px) {
+    .item {
+        border: 1px solid white;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 2rem !important;
+    }
+}
