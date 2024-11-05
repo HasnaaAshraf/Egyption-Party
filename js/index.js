@@ -1,10 +1,21 @@
 
-///<refrence type="" />
+/// <reference types="../@types/jquery" />
+
+
+// $('.navbar-brand').on('click' , function(){
+
+//   // console.log("hello");
+//   const navWidth = $('.offcanvas').innerWidth()
+//   $('.offcanvas.showing ').animate({'transform':'none'}, 1000);
+
+//   console.log($('.offcanvas').css(('left')));
+// })
 
 
 $('.SingerH2').on('click' , function(){
     $(this).next().slideToggle(1000)
     // console.log("Hello");
+    
 })
 
 
@@ -58,4 +69,10 @@ $(function() {
     const remainCalc = 100 - textAreaLength;
     $('#chars').html(remainCalc);
     console.log(remainCalc);
+    if (remainCalc == 0) {
+      $('textarea').prop('disabled', true);
+      $('#chars').html("Can't Add More Than 100")
+  }else{
+    $('textarea').prop('disabled', false);
+  }
 })
